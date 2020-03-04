@@ -1,0 +1,135 @@
+// main style sheet
+
+
+// reset stylesheet
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    font: normal normal normal 12px/1.4em Enriqueta,serif;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+button {
+    border-radius: 5px;
+}
+
+// actual styling
+.container {
+  background-color: lightgray;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  position: fixed;
+  text-align: center;
+}
+
+// main board styling
+.title {
+    margin: 20px 0;  
+    font-size: 36px;
+}
+
+.main-board {
+    width: 95%;
+    border: 1px solid darkgray;
+    margin: auto; 
+    height: 85%;
+    position: relative;
+}
+
+.board-container {
+    margin: 20% 20px 20px 20px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.dice-container {
+    float: right;
+    width: 73%;
+    border: 1px solid black;
+    height: 100%;
+}
+
+.hits-container {
+    float: left;
+    width: 25%;
+    border: 1px solid black;
+    height: 100%;
+}
+
+
+
+.selection-container {
+    display: flex;
+    height: 30px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+// interior boards styling
+
+
+.board-container section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+// dice styling
+.dice {
+    display: flex;
+    border: 1px solid black;
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+    color: red;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dice-5, .dice-6 {
+    background-color: green;
+    color: black;  
+}
+
+
