@@ -118,9 +118,13 @@ function buildDice() {
 // function to remove all dice
 function clearDice () {
     const allDice = document.querySelectorAll(".dice");
-    while (allDice.length > 0) {
-        allDice[0].parentNode.removeChild(allDice[0]);
+    for (let i = 0; i < allDice.length; i ++) {
+        // debugger
+        let die = allDice[i]
+        die.parentNode.removeChild(die);
     }
+    hitsTitle.innerText = `Hits`;
+    diceTitle.innerText = "Total Dice";
 };
 
 
